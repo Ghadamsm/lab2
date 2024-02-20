@@ -32,12 +32,21 @@ public class Main {
 
 
 
-//
+
 //        int [] num = {1 ,1 ,1 ,3 ,3 ,5 };
 //
+//        int count = 0 ;
 //
-//        counts(num);
-
+//        System.out.println("enter number : ");
+//        int num1 = s.nextInt();
+//
+//        for (int i = 0; i < num.length ; i++) {
+//            if (num[i] == num1 ){
+//                count++ ;
+//            }
+//        }
+//
+//        System.out.println(num1 + " occurs " + count +" times");
 
 
 
@@ -49,9 +58,9 @@ public class Main {
 //        3.Write a program to find the k largest elements in a given array. Elements in the array can be in any order
 //Original Array:
 //[1, 4, 17, 7, 25, 3, 100]
-
-
-
+//
+//
+//
 //        int[] array = {1, 4, 17, 7, 25, 3, 100};
 //
 //        System.out.println("please enter the K");
@@ -192,8 +201,10 @@ public class Main {
 //specify the range and call the method to display random numbers.
 //Hint: use Random class
 
-
-
+//
+//
+//        Random r = new Random();
+//
 //        System.out.println("Enter the minimum value of the range : ");
 //        int min = s.nextInt();
 //
@@ -206,8 +217,13 @@ public class Main {
 //        int ran = s.nextInt();
 //
 //
+//        System.out.println("Random numbers within the specified range : ");
 //
-//        randomnum(min , max , ran);
+//        for (int i = 0; i < ran; i++)
+//
+//            System.out.print(" " + randomnum(min , max));
+
+
 
 
 
@@ -297,31 +313,6 @@ public class Main {
 
 
 
-    // Q2
-
-
-
-//    public static void counts (int [] num ){
-//
-//        Map<Integer, Integer> map = new HashMap<>();
-//
-//        for (int value : num) {
-//            map.put(value, map.getOrDefault(value, 0) + 1);
-//        }
-//
-//        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-//            int element = entry.getKey();
-//            int occurrences = entry.getValue();
-//            System.out.println(element + " occurs " + occurrences + " time" + (occurrences > 1 ? "s" : ""));
-//
-//
-//        }
-//    }
-
-
-
-
-
 
 
 
@@ -361,24 +352,14 @@ public class Main {
 // Q6
 
 
-//public static void randomnum (int min , int max , int ran){
+//public static int randomnum (int mi , int ma){
 //
-//    Random r = new Random();
-//
-//
-//    System.out.println("Random numbers within the specified range : ");
+//    int n = (int) (Math.random() * (ma- mi)) + mi ;
+//    return n ;
 //
 //
-//    for (int i = 0; i < ran; i++) {
-//        int rannum = r.nextInt(max - min + 1);
-//        System.out.print(rannum);
-//    if ( i < ran -1){
-//        System.out.print(" - ");
 //    }
 //
-//
-//    }}
-
 
 
 
@@ -427,7 +408,7 @@ public class Main {
 //
 //        return (upper && lower)?3:0;
 //}
-
+//
 
 
 
